@@ -34,3 +34,6 @@ console.log(booleanTrue)
 
 let booleanFalse = false;
 console.log(booleanFalse)
+
+
+
