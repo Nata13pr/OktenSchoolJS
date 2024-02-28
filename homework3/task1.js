@@ -171,7 +171,6 @@ for (const user in users){
         console.log('Користувач старше за 30 років',users[user].name)
     }
 }
-
 // Additional
 
 // --створити масив з:
