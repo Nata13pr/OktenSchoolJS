@@ -48,7 +48,7 @@ while (j<=20){
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 document.write(`<ul>`)
 for (let m=0;m<=listOfItems.length-1;m+=1){
-    document.write(`<ul>${listOfItems[m]}</ul>`)
+    document.write(`<li>${listOfItems[m]}</li>`)
 }
 document.write(`</ul>`)
 
