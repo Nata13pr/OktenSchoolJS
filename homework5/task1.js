@@ -175,3 +175,7 @@ const exchange = (sumUAH, currencyValues, exchangeCurrency) => {
 }
 
 exchange(10000, [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}], 'USD')
+
+const l=['RRRRRR'];
+
+console.log(typeof l)
