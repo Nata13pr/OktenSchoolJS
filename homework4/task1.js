@@ -177,7 +177,7 @@ const arrayOfBooks = [
     {
         name: 'Wolf',
         pages: 56,
-        authors: ['Mykola', 'Nina', 'Vasja', 'Sveta'],
+        authors: ['Mykola', 'Nina'],
         genres: ['detective', 'poem', 'novel']
     },
     {
@@ -196,6 +196,24 @@ const arrayOfBooks = [
         name: 'Cat',
         pages: 56,
         authors: ['Mykola', 'Nina', 'Vasja', 'Sveta'],
+        genres: ['detective', 'poem', 'novel', 'thriller']
+    },
+    {
+        name: 'Rabbit',
+        pages: 78,
+        authors: ['Nina'],
+        genres: ['detective', 'poem', 'novel']
+    },
+    {
+        name: 'Cow',
+        pages: 65,
+        authors: ['Mykola', 'Sveta'],
+        genres: ['detective', 'poem', 'novel']
+    },
+    {
+        name: 'Sheep',
+        pages: 13,
+        authors: ['Sveta'],
         genres: ['detective', 'poem', 'novel', 'thriller']
     },
 ];
@@ -260,3 +278,26 @@ for (let i = 0; i <= arrayOfBooks.length - 1; i += 1) {
 }
 
 console.log(arrayOfBooksWIthLongestName);
+
+// - знайти книжку/ки які писали 2 автори
+const arrayWithBooksWrittenByTwoAuthors=[];
+
+for (let i=0;i<=arrayOfBooks.length-1;i+=1){
+
+    if (arrayOfBooks[i].authors.length===2){
+        arrayWithBooksWrittenByTwoAuthors[arrayWithBooksWrittenByTwoAuthors.length]=arrayOfBooks[i]
+    }
+}
+
+console.log('книжки які писали 2 автори',arrayWithBooksWrittenByTwoAuthors)
+
+// - знайти книжку/ки які писав 1 автор
+const booksArrayWrittenByOneAuthor=[];
+
+for(let i=0;i<=arrayOfBooks.length-1;i+=1){
+    if(arrayOfBooks[i].authors.length===1){
+        booksArrayWrittenByOneAuthor[booksArrayWrittenByOneAuthor.length]=arrayOfBooks[i]
+    }
+}
+
+console.log('книжки які писав 1 автор',booksArrayWrittenByOneAuthor)

@@ -1,0 +1,8 @@
+.users-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-block{
+    width: 400px;
+}
