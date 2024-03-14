@@ -12,9 +12,13 @@ block.classList.add('beta');
 
 block.style.backgroundColor = 'lightBlue';
 block.style.width = '100px';
-block.style.height = '55px'
+block.style.height = '55px';
+block.style.marginTop='20px';
 
-document.body.append(block)
+document.body.append(block);
+
+const clone=block.cloneNode(true)
+document.body.appendChild(clone)
 
 
 // - Є масив:
