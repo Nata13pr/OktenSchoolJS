@@ -12,3 +12,22 @@ sessions.map(item => {
     date.innerText = `${sessionDate}`;
     list.appendChild(date);
 })
+
+//Робив Сергій на занятті
+const div=document.createElement('div');
+document.body.appendChild(div);
+div.classList.add('target');
+
+function readSessions(){
+    let ul=document.createElement('ul');
+    document.body.appendChild(ul);
+    let sessionArray=JSON.parse(localStorage.getItem('sessions'));
+    for(const session of sessionArray){
+        let li=document.createElement('li');
+        li.innerText=session.day+' '+ session.hour+' '+session.minutes+''+ session.seconds;
+
+        ul.appendChild(li)
+    }
+}
+
+readSessions(document.getElementsByClassName('target')[0])

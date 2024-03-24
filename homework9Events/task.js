@@ -31,9 +31,11 @@ if (!localStorage.getItem('number')) {
 } else {
     let newNumber = localStorage.getItem('number');
     localStorage.setItem('number', newNumber + 1);
+
     const anotherNumber = localStorage.getItem('number')
     number = anotherNumber.length;
 }
+
 blockWithNumber.innerText = String(number);
 document.body.appendChild(blockWithNumber);
 
@@ -203,17 +205,24 @@ const pageSize = 10;
 function showArray3() {
     let start = (page - 1) * pageSize;
     let end = page * pageSize;
+
     divWith10Object3.textContent = '';
+
     const newArrayPerPage = arrayWith100OObjects3.slice(start, end)
+
     for (let i = 0; i < newArrayPerPage.length; i += 1) {
         const h2 = document.createElement('h2');
         h2.innerText = `Object element with ${newArrayPerPage[i].id} id`
+
         const id = document.createElement('p');
         id.innerText = `ID - ${newArrayPerPage[i].id}`;
+
         const name = document.createElement('p');
         name.innerText = `Name - ${newArrayPerPage[i].name}`;
+
         const age = document.createElement('p');
         age.innerText = `Age - ${newArrayPerPage[i].age}`
+
         divWith10Object3.append(h2, id, name, age)
     }
 }

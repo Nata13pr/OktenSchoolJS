@@ -18,3 +18,20 @@ if (!localStorage.getItem('sessions')) {
     localStorage.setItem('sessions', JSON.stringify(sessions))
 }
 
+//Показував Сергій на додатковому
+function saveVisit() {
+    let sessions = localStorage.getItem('sessions');
+    let arrayOfSessions = JSON.parse(sessions) || [];
+    console.log(arrayOfSessions)
+
+    let date = new Date();
+    arrayOfSessions.push({
+            day: date.getDate(),
+            hour: date.getHours(),
+            minutes: date.getMinutes(),
+            seconds: date.getSeconds(),
+        }
+    )
+    localStorage.setItem('sessions', JSON.stringify(arrayOfSessions))
+}
+saveVisit()
