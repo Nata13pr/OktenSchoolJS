@@ -36,6 +36,7 @@ ageForm.addEventListener('submit', function (e) {
     } else {
         h2.innerText = 'You have to write numbers or age below 120 '
     }
+    input.value = '';
 })
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
@@ -78,6 +79,9 @@ formWithThreeInputs.addEventListener('submit', function (e) {
             tr.appendChild(td)
         }
     }
+    amountOfRows.value = '';
+    amountOfCells.value = '';
+    cellContents.value = '';
 })
 
 document.body.appendChild(table)

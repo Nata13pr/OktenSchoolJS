@@ -17,6 +17,9 @@ form.onsubmit = function (e) {
         p.innerText = `${key} - ${obj[key]}`;
         newDiv.appendChild(p)
     }
+    this.userName.value = ''
+    this.surname.value = ''
+    this.age.value = ''
 }
 
 // ==========================
