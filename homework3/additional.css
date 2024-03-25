@@ -1,0 +1,10 @@
+.users-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.user-block{
+    width: 200px;
+}
